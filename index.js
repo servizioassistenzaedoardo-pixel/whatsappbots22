@@ -1,8 +1,9 @@
 const http = require('http');
 http.createServer((req, res) => {
-  res.write('Bot Assistenza Edoardo Online');
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('Bot Online');
   res.end();
-}).listen(process.env.PORT || 8080);
+}).listen(process.env.PORT || 8080, '0.0.0.0');
 const { default: makeWASocket, useMultiFileAuthState, delay, fetchLatestBaileysVersion } = require('@whiskeysockets/baileys');
 const qrcode = require('qrcode-terminal');
 const pino = require('pino');
