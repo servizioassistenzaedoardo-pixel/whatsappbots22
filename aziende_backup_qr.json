@@ -1,0 +1,85 @@
+{
+  "default": {
+    "nome_azienda": "Gestione Gruppi Edoardo",
+    "numero_admin": "393791304280@s.whatsapp.net",
+
+    "fondatori": [
+      "393791304280@s.whatsapp.net",
+      "390683423876@s.whatsapp.net"
+    ],
+
+    "comandi": {
+      "test": "test",
+      "stop_test": ".stoptest"
+    },
+
+    "orari": {
+      "attivi": true,
+      "testo": "Lun: 14:30-20:00\nMar: 16:40-18:00 / 20:00-20:35\nMer: 14:30-20:00\nGio: 16:35-18:00 / 20:00-20:40\nVen: 14:20-21:30\nSab: 07:00-13:30 / 16:00-19:30\nDom: 08:00-12:00",
+      "giorni": {
+        "1": [{ "s": "14:30", "e": "20:00" }],
+        "2": [{ "s": "16:40", "e": "18:00" }, { "s": "20:00", "e": "20:35" }],
+        "3": [{ "s": "14:30", "e": "20:00" }],
+        "4": [{ "s": "16:35", "e": "18:00" }, { "s": "20:00", "e": "20:40" }],
+        "5": [{ "s": "14:20", "e": "21:30" }],
+        "6": [{ "s": "07:00", "e": "13:30" }, { "s": "16:00", "e": "19:30" }],
+        "0": [{ "s": "08:00", "e": "12:00" }]
+      }
+    },
+
+    "tempi": {
+      "delay_ticket": 10000,
+      "delay_menu": 4000,
+      "delay_chiusura": 2000,
+      "attesa_operatore": 120000
+    },
+
+    "messaggi": {
+      "benvenuto": "Benvenuto al servizio autonomo di risposta di Gestione Gruppi Edoardo! Attendi un secondo che apro un ticket per te!",
+      "ticket_aperto": "Ticket aperto!\nIl tuo numero di ticket è\n*10759264*.\nPuoi tracciare il tuo ticket qui: https://base44.app\n\nOra possiamo continuare…",
+      "menu": "Ciao!\nAdesso scegli tra queste opzioni:\n1- Parla con me e posso risolverti alcuni problemi!\n2- Prenota una chiamata telefonica!\n3- Prova a parlare con un operatore!",
+      "chiuso": "Ci dispiace ma Gestione Gruppi Edoardo è chiusa in questo momento. Ricontattaci durante gli orari disponibili.",
+      "scelta_non_valida": "Scelta non valida. Scrivi 1, 2 oppure 3.",
+      "non_ho_capito": "Mi dispiace ma non ho capito! Ti connetto subito ad un operatore.",
+      "prenotazione_registrata": "Ok perfetto, ho registrato la tua prenotazione!",
+      "connessione_operatore": "Grazie!\nTi stiamo connettendo ad un operatore!\nIl tempo medio di attesa è di 3 minuti!\nAttendi qui grazie!",
+      "operatore_non_disponibile": "Mi dispiace ma ora non ci sono operatori disponibili😭\nProva ad attendere ancora qui o, se non puoi, ti contatteremo dopo. Grazie!🔴",
+      "operatore_connesso": "UN OPERATORE SI È CONNESSO ALLA CHAT!💬🟢✅",
+      "chiusura_finale": "Arrivederci!\nGrazie per aver usufruito dei servizi di Gestione Gruppi Edoardo! A presto!",
+      "test_attivato": "🛠 Modalità TEST attivata. Ora puoi testare il bot anche fuori orario.",
+      "test_disattivato": "🔒 Modalità TEST disattivata. Il bot seguirà gli orari normali.",
+      "notifica_prenotazione_titolo": "📅 *NUOVA PRENOTAZIONE*",
+      "notifica_operatore_titolo": "👤 *RICHIESTA OPERATORE*"
+    },
+
+    "opzioni": {
+      "1": {
+        "messaggio": "Perfetto!\nCome posso aiutarti?",
+        "prossimo_stato": "attesa_domanda"
+      },
+      "2": {
+        "messaggio": "Perfetto!\nOra dimmi la data e l'orario della chiamata.",
+        "prossimo_stato": "attesa_prenotazione"
+      },
+      "3": {
+        "messaggio": "Perfetto!\nTi sto connettendo ad un operatore, ma prima forniscici il tuo Nome ed il tuo Cognome. Grazie!",
+        "prossimo_stato": "attesa_nome_operatore"
+      }
+    },
+
+    "keywords": [
+      {
+        "parole": ["prezzo", "costo", "quanto costa"],
+        "risposta": "Per i prezzi dei servizi di Gestione Gruppi Edoardo puoi parlare con un operatore."
+      },
+      {
+        "parole": ["orari", "quando siete aperti", "aperti"],
+        "risposta": "Ecco gli orari di Gestione Gruppi Edoardo:\nLun: 14:30-20:00\nMar: 16:40-18:00 / 20:00-20:35\nMer: 14:30-20:00\nGio: 16:35-18:00 / 20:00-20:40\nVen: 14:20-21:30\nSab: 07:00-13:30 / 16:00-19:30\nDom: 08:00-12:00"
+      },
+      {
+        "parole": ["sito", "link", "website"],
+        "risposta": "Puoi visitare il sito qui: https://base44.app"
+      }
+    ]
+  }
+}
