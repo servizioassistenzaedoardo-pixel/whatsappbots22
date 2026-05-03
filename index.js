@@ -96,7 +96,7 @@ async function connectToWhatsApp(aziendaId = 'default') {
     return sockets[aziendaId];
   }
 
-  const sessionPath = path.join('sessions', aziendaId);
+  const sessionPath = path.join(process.env.SESSION_PATH ||'sessions', aziendaId);
   const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
   const { version } = await fetchLatestBaileysVersion();
 
